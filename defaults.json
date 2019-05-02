@@ -1,0 +1,11 @@
+{
+	"brandPrimaryColor": "#2090ea",
+	"brandSuccessColor": "#4CAF50",
+	"brandInfoColor": "#03A9F4",
+	"brandWarningColor": "#FFB300",
+	"brandDangerColor": "#F44336",
+	"bodyBgColor": "#f1f2f3",
+	"bodyTextColor": "#5e5e5e",
+	"fontSizeBase": "13px",
+	"bootstrapGrayBase": "#333"
+}

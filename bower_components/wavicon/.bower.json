@@ -1,0 +1,14 @@
+{
+  "name": "wavicon",
+  "homepage": "https://github.com/wavemaker/wavicon",
+  "version": "1.0.4",
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.4",
+    "commit": "49d574e1b30fd71e9cb2362eea240c9eed21ade9"
+  },
+  "_source": "https://github.com/wavemaker/wavicon.git",
+  "_target": "v1.0.4",
+  "_originalSource": "https://github.com/wavemaker/wavicon.git"
+}

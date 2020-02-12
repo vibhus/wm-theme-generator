@@ -23,15 +23,15 @@ app.use(bodyParser.json({ type: 'application/json'}));
 
 // Returns JSON having defaults for varibales.less file
 app.get(PATHS.DEFAULT_VARIABLES_JSON, (req, res) => {
-	content = fs.readFileSync(PATHS.FILE_DEFAULT_VARIABLES_JSON, 'utf-8');
+	let content = fs.readFileSync(PATHS.FILE_DEFAULT_VARIABLES_JSON, 'utf-8');
 	res.setHeader('Content-Type', 'application/json');
 	res.end(content);
 });
 
 // Returns variables used in the variables.less file in the current state.
-// In the begining, it is same as the defaults.json (can be made empty later, but logic has to be handled in the app)
+// In the beginning, it is same as the defaults.json (can be made empty later, but logic has to be handled in the app)
 app.get(PATHS.DATA_VARIABLES_LESS_JSON, (req, res) => {
-	content = fs.readFileSync(PATHS.FILE_VARIABLES_LESS_JSON, 'utf-8');
+	let content = fs.readFileSync(PATHS.FILE_VARIABLES_LESS_JSON, 'utf-8');
 	res.setHeader('Content-Type', 'application/json');
 	res.end(content);
 });
@@ -80,11 +80,11 @@ const updateVariablesLessJSON = async (data) => {
 };
 
 const updateVariablesLess = async (data) => {
-	var template = Handlebars.compile(fs.readFileSync(PATHS.FILE_VARIABLES_LESS_TEMPLATE, 'utf-8'));
-	var content = template(data);
+	let template = Handlebars.compile(fs.readFileSync(PATHS.FILE_VARIABLES_LESS_TEMPLATE, 'utf-8'));
+	let content = template(data);
 	await fs.writeFileSync(PATHS.FILE_VARIABLES_LESS, content);
 };
 
 app.listen('8888', () => {
-	console.log('listening for app')
+	console.log('wm theme generator server active...')
 });

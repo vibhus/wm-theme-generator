@@ -18,7 +18,7 @@
     "grunt-contrib-copy": "0.8.2",
     "grunt-contrib-less": "1.1.0",
     "grunt-xmlstoke": "^0.7.1",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "matchdep": "0.3.0",
     "node-cmd": "^3.0.0"
   },
